@@ -1,0 +1,3 @@
+Komainu is a simple yet beautiful web for a restaurant.
+
+Made with BOOSTRAP, JS, JQUERY and more...
