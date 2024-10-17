@@ -1,6 +1,73 @@
+/* Import fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* General settings. */
+body {
+    background-color: #FAF3CE !important;
+}
 
 * {
     font-family: "Poppins", system-ui;
     font-weight: 400;
+}
+
+/* Nav settings. */
+img.komainu-logo {
+    width:8em;
+}
+
+.fa-solid, .fas {
+    font-size: 2em;
+    color: #E40E20;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Text for video */
+.text-for-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.text-for-video > img {
+    height: 100vh;
+}
+
+/* Background video settings */
+.video-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#back-video-ramen {
+    height: 100vh;
+}
+
+/* Rest of text */
+.despcrition-text {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.despcrition-text > p {
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 2em;
 }
