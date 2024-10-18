@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
+/* Color variables */
+:root {
+    --primario: #E40E20;
+    --secundario: #FAF3CE;
+}
+
 /* General settings. */
 body {
-    background-color: #FAF3CE !important;
+    background-color: var(--secundario) !important;
 }
 
 * {
@@ -19,11 +25,22 @@ img.komainu-logo {
 
 .fa-solid, .fas {
     font-size: 2em;
-    color: #E40E20;
+    color: var(--primario);
 }
 
 .navbar-toggler {
     border: none;
+}
+
+/* Button settings */
+.reservar-mesa {
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    color: var(--primario);
+    z-index: 3;
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }
 
 /* Text for video */
