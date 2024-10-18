@@ -62,6 +62,7 @@ img.komainu-logo {
 
 .text-for-video > img {
     height: 100vh;
+    object-fit: cover;
 }
 
 /* Background video settings */
