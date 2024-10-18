@@ -29,18 +29,21 @@ img.komainu-logo {
 }
 
 .navbar-toggler {
-    border: none;
+    border: none !important;
 }
 
 /* Button settings */
 .reservar-mesa {
-    font-family: "Rammetto One", sans-serif;
-    font-weight: 400;
-    color: var(--primario);
+    font-family: "Rammetto One", sans-serif !important;
+    font-weight: 400 !important;
+    color: var(--secundario) !important;
+    background-color: var(--primario) !important;
+    border-color: black !important;
     z-index: 3;
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 27%;
+    bottom: 5%;
+    filter: drop-shadow(5px 7px 4px #000000bd);
 }
 
 /* Text for video */
@@ -48,7 +51,6 @@ img.komainu-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     overflow: hidden;
 }
 
