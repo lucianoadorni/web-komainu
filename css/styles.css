@@ -98,11 +98,25 @@ img.komainu-logo {
 }
 
 /* Características de la comida */
-.características {
-    width: 100%;
+.caracteristicas {
+    background-color: var(--secundario);
 }
 
-.características .características_cont {
-
+.caracteristicas .row {
+    border-bottom: 2px var(--primario) solid;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
+.caracteristicas .row .col-8 h3 {
+    font-size: 1.5em;
+    margin: 0 0 0.5rem 0;
+}
+
+.caracteristicas .row .col-8 p {
+    font-size: 1em;
+    margin: 0;
+}
