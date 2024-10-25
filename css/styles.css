@@ -178,7 +178,6 @@ img.komainu-logo {
 }
 
 /* UBICACION */
-
 #laUbicacion {
     background-color: var(--secundario);
     height: 40vh;
@@ -194,8 +193,13 @@ img.komainu-logo {
     font-size: 2em;
 }
 
-.textoRojo .row .textoRojoCont {
+/* TEXTO ROJO */
+.textoRojo{
     background-color: var(--secundario);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .textoRojo .row .textoRojoCont h3 {
