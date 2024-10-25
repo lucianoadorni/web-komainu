@@ -6,5 +6,4 @@ new Splide( '.splide', {
     perMove: 1,
     focus: "center",
     gap: "1em",
-    autoWidth: true,
 }).mount();
