@@ -216,3 +216,66 @@ img.komainu-logo {
     font-size: 1.5em;
     line-height: 1.6;
 }
+
+
+
+/* Footer */
+/* Marquesina */
+footer {
+    background-color: black;
+    padding: 1rem 0;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.marquee .marquee_content {
+    display: flex;
+    list-style: none;
+    animation: scrolling 15s linear infinite;
+}
+
+.marquee .marquee_content li {
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    padding: 0 1vw;
+    text-transform: uppercase;
+}
+
+.marquee .marquee_content li:nth-child(even) {
+    color: var(--primario);
+}
+
+.marquee .marquee_content li:nth-child(odd) {
+    color: var(--secundario);
+}
+
+.marquee .marquee_content ._item {
+    flex-shrink: 0;
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0) }
+    100% { transform: translateX(-100%) }
+}
+
+/* Texto ofertas y promociones */
+.ofertasPromociones {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ofertasPromociones .row .ofertasPromocionesCont p  {
+    color: white;
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+}
