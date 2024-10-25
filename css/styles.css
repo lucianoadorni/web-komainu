@@ -193,6 +193,12 @@ img.komainu-logo {
     font-size: 2em;
 }
 
+/* CARROUSEL */
+.splide__slide img {
+    border-radius: 50px;
+    width: 20em;
+}
+
 /* TEXTO ROJO */
 .textoRojo{
     background-color: var(--secundario);
