@@ -120,12 +120,16 @@ img.komainu-logo {
 }
 
 
-.caracteristicas .row .col-8 h3 {
+.caracteristicas .row .ingredientesTexto {
     font-size: 1.5em;
     margin: 0 0 0.5rem 0;
 }
 
-.caracteristicas .row .col-8 p {
+.caracteristicas .row .ingredientesImg p {
     font-size: 1em;
     margin: 0;
+}
+
+.caracteristicas .row .ingredientesImg img {
+    width: 60px;
 }
