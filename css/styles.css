@@ -193,3 +193,16 @@ img.komainu-logo {
     font-style: normal;
     font-size: 2em;
 }
+
+.textoRojo .row .textoRojoCont {
+    background-color: var(--secundario);
+}
+
+.textoRojo .row .textoRojoCont h3 {
+    color: var(--primario);
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 1.6;
+}
