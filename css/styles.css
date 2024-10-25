@@ -134,7 +134,7 @@ img.komainu-logo {
     width: 60px;
 }
 
-/* Características de la comida */
+/* KITS TITULO */
 #nuestroskits {
     background-color: var(--secundario);
     height: 60vh;
@@ -149,7 +149,9 @@ img.komainu-logo {
     font-style: normal;
     color: var(--secundario);
     -webkit-text-stroke: 1px var(--primario);
-    font-size: 2.5em;
+    font-size: 2.2em;
+    padding: 0.5em;
+    white-space: nowrap;
 }
 
 /* LOS KITS */
@@ -171,6 +173,12 @@ img.komainu-logo {
     font-size: 1em;
 }
 
+.losKits .row p {
+    margin-bottom: 0;
+}
+
+/* UBICACION */
+
 #laUbicacion {
     background-color: var(--secundario);
     height: 40vh;
@@ -179,7 +187,7 @@ img.komainu-logo {
     align-items: center;
 }
 
-#laUbicacion > h3 {
+#laUbicacion h3 {
     font-family: "Rammetto One", sans-serif;
     font-weight: 400;
     font-style: normal;
