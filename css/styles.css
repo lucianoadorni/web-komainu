@@ -40,10 +40,6 @@ img.komainu-logo {
 
 /* Button settings */
 .reservar-mesa {
-    font-family: "Rammetto One", sans-serif !important;
-    font-weight: 400 !important;
-    white-space: nowrap;
-    color: var(--secundario) !important;
     background-color: var(--primario) !important;
     border-color: black !important;
     z-index: 3;
@@ -58,6 +54,14 @@ img.komainu-logo {
 .reservar-mesa:hover {
     filter: drop-shadow(0px 0px 0px #000000bd);
     transition: 0.5s;
+}
+
+.reservar-mesa > a {
+    font-family: "Rammetto One", sans-serif !important;
+    font-weight: 400 !important;
+    white-space: nowrap;
+    color: var(--secundario) !important;
+    text-decoration: none;
 }
 
 /* Text for video */
@@ -194,9 +198,22 @@ img.komainu-logo {
 }
 
 /* CARROUSEL */
-.splide__slide img {
-    border-radius: 50px;
+.splide {
+    background-color: var(--secundario);
+}
+
+.splide__slide div {
+    height: 40em;
     width: 20em;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.splide__slide img {
+    width: 200%;
+    object-fit: cover;
 }
 
 /* TEXTO ROJO */

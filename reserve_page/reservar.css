@@ -1,0 +1,14 @@
+/* Import fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Color variables */
+:root {
+    --primario: #E40E20;
+    --secundario: #FAF3CE;
+}
+
+/* General settings. */
+body {
+    background-color: var(--secundario) !important;
+}

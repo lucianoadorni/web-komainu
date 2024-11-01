@@ -36,19 +36,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Carta</a>
+                        <a class="nav-link active" aria-current="page" href="#caracteristicasG">Características</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Kits caseros</a>
+                        <a class="nav-link active" aria-current="page" href="#nuestroskits">Nuestros kits</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre nosotros</a>
+                        <a class="nav-link active" aria-current="page" href="#laUbicacion">Dirección</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                        <a class="nav-link active" aria-current="page" href="#laGaleria">Galeria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Dirección</a>
+                        <a class="nav-link active" aria-current="page" href="#sobreNosotros">Sobre nosotros</a>
                     </li>
                 </ul>   
             </div>
@@ -56,7 +56,7 @@
     </nav>
 
     <!-- Reserve button -->
-    <button type="button" class="btn btn-primary rounded-pill btn-lg reservar-mesa">Reservar mesa</button>
+    <button type="button" class="btn btn-primary rounded-pill btn-lg reservar-mesa"><a href="reserve_page\reservar.html">Reservar mesa</a></button>
     
     <!-- background video + text-->
     <div class="text-for-video">
@@ -76,7 +76,7 @@
 
 
     <!-- Características de la comida -->
-    <div class="container-fluid caracteristicas">
+    <div id="caracteristicasG" class="container-fluid caracteristicas">
         <div class="row">
             <div class="col-9 m-0 ingredientesTextos">
                 <h3>Caldos caseros</h3>
@@ -188,26 +188,26 @@
     </div>
 
     <!-- carrousel -->
-    <section class="splide" aria-label="KomainuSplide">
+    <section class="splide" aria-label="KomainuSplide" id="laGaleria">
         <div class="splide__track">
               <ul class="splide__list">
-                  <li class="splide__slide"  style="width: 1000px">
-                    <img src="media\fotos_carrousel\Barra_con_logo.webp" alt="">
+                  <li class="splide__slide">
+                    <div><img src="media\fotos_carrousel\Barra_con_logo.webp" alt=""></div>
                   </li>
                   <li class="splide__slide">
-                    <img src="media\fotos_carrousel\Los_duenos.jpg" alt="">
+                    <div><img src="media\fotos_carrousel\Los_duenos.jpg" alt=""></div>
                   </li>
                   <li class="splide__slide">
-                    <img src="media\fotos_carrousel\Mesa_y_Komainu.webp" alt="">
+                    <div><img src="media\fotos_carrousel\Mesa_y_Komainu.webp" alt=""></div>
                   </li>
                   <li class="splide__slide">
-                    <img src="media\fotos_carrousel\Ramen_en_bowl.webp" alt="">
+                    <div><img src="media\fotos_carrousel\Ramen_en_bowl.webp" alt=""></div>
                   </li>
                   <li class="splide__slide">
-                    <img src="media\fotos_carrousel\Sirviendo_ramen.jpg" alt="">
+                    <div><img src="media\fotos_carrousel\Sirviendo_ramen.jpg" alt=""></div>
                   </li>
                   <li class="splide__slide">
-                    <img src="media\fotos_carrousel\Vista_Interior_Ramen_Komainu.webp" alt="">
+                    <div><img src="media\fotos_carrousel\Vista_Interior_Ramen_Komainu.webp" alt=""></div>
                   </li>
               </ul>
         </div>
@@ -215,7 +215,7 @@
     </div>
 
     <!-- Texto rojo -->
-    <div class="container text-center textoRojo">
+    <div class="container text-center textoRojo" id="sobreNosotros">
         <div class="row">
             <div class="col-12 m-0 textoRojoCont">
                 <h3>Nuestra misión es protegerte de comer aquello que llaman ramen y que sólo comparte nombre con este plato milenario, sabroso y casero</h3>
