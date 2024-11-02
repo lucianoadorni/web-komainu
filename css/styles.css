@@ -107,7 +107,8 @@ img.komainu-logo {
     font-weight: 400;
     font-style: normal;
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
+    margin: 0.6em;
 }
 
 /* Características de la comida */
@@ -136,6 +137,42 @@ img.komainu-logo {
 
 .caracteristicas .row .ingredientesImg img {
     width: 60px;
+}
+
+/* Animación imágenes rotando */
+.ingredientsImg {
+    overflow: hidden;
+}
+
+.rotation-logo {
+    display: block;
+    margin: 0 auto;
+    animation: rotate 10s infinite linear;
+}
+
+.row:nth-child(1) .rotation-logo {
+    animation-delay: 0s;
+}
+
+.row:nth-child(2) .rotation-logo {
+    animation-delay: 2s;
+}
+
+.row:nth-child(3) .rotation-logo {
+    animation-delay: 4s;
+}
+
+.row:nth-child(4) .rotation-logo {
+    animation-delay: 6s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* KITS TITULO */
@@ -168,6 +205,11 @@ img.komainu-logo {
     color: var(--secundario);
 }
 
+.par {
+    background-color: var(--secundario);
+    color: black;
+}
+
 .losKits .row {
     padding: 1rem;
 }
@@ -180,6 +222,32 @@ img.komainu-logo {
 .losKits .row p {
     margin-bottom: 0;
 }
+
+.losKits .rpar:hover,
+.losKits .par:hover {
+    background-color: var(--primario);
+    transition: 0.3s;
+}
+
+.losKits .rpar div a i {
+    color: var(--secundario);
+    font-size: 2em;
+}
+
+.losKits .rpar div a i:hover {
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.losKits .par div a i {
+    color: black;
+}
+
+.losKits .par div a i:hover {
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
 
 /* UBICACION */
 #laUbicacion {
@@ -217,7 +285,8 @@ img.komainu-logo {
 }
 
 /* TEXTO ROJO */
-.textoRojo{
+
+.textoRojo {
     background-color: var(--secundario);
     height: 50vh;
     display: flex;
@@ -232,8 +301,8 @@ img.komainu-logo {
     font-style: normal;
     font-size: 1.5em;
     line-height: 1.6;
+    margin: 0.6em;
 }
-
 
 
 /* Footer */
