@@ -32,6 +32,11 @@ img.komainu-logo {
 .fa-solid, .fas {
     font-size: 2em;
     color: var(--primario);
+    margin-right: 0.3em;
+}
+
+.nav-item a {
+    margin-right: 2em;
 }
 
 .navbar-toggler {
@@ -126,8 +131,10 @@ img.komainu-logo {
 
 
 .caracteristicas .row .ingredientesTextos h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+    color: var(--primario);
 }
 
 .caracteristicas .row .ingredientesTextos p {
@@ -147,7 +154,7 @@ img.komainu-logo {
 .rotation-logo {
     display: block;
     margin: 0 auto;
-    animation: rotate 10s infinite linear;
+    animation: rotate 8s infinite linear;
 }
 
 .row:nth-child(1) .rotation-logo {
@@ -304,6 +311,25 @@ img.komainu-logo {
     margin: 0.6em;
 }
 
+.horario {
+    background-color: var(--secundario);
+}
+
+.horario .row {
+    border-top: 2px var(--primario) solid;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horario .row h3 {
+    font-size: 1.2em;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+    color: var(--primario);
+}
+
 
 /* Footer */
 /* Marquesina */
@@ -364,4 +390,73 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-size: 1.2em;
+    margin-top: 2em;
+}
+
+.ofertasPromociones2 .row .ofertasPromocionesCont2 p  {
+    color: white;
+    margin: 0 2em 2em 2em;
+}
+
+.politicas .row {
+    padding: 1rem;
+}
+
+.politicas .row h3 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.politicas .row div p {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.politicas .row div p:hover {
+    font-weight: bold;
+    transition: 0.3s;
+    color: var(--primario);
+}
+
+.contacto .row {
+    padding: 1rem;
+}
+
+.contacto .row h3 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contacto .row div p {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.copy .row {
+    padding: 1rem;
+}
+
+.copy .row div p {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_footer {
+    background-image: url('../media/elemento_rojo_footer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+    color: white;
+}
+
+.nav-itemFooter a {
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
 }
