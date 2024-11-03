@@ -8,14 +8,27 @@
     --secundario: #FAF3CE;
 }
 
-/* General settings. */
-body {
-    background-color: var(--secundario) !important;
-}
-
 * {
     font-family: "Poppins", system-ui;
     font-weight: 400;
+}
+
+html::-webkit-scrollbar {
+    width: 15px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--primario);
+    border-radius: 10px;
+}
+
+/* General settings. */
+body {
+    background-color: var(--secundario) !important;
 }
 
 img {
@@ -25,6 +38,11 @@ img {
 }
 
 /* Nav settings. */
+
+.box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 img.komainu-logo {
     width:8em;
 }
@@ -37,6 +55,7 @@ img.komainu-logo {
 
 .nav-item a {
     margin-right: 2em;
+    margin-left: 2em;
 }
 
 .navbar-toggler {
@@ -147,9 +166,9 @@ img.komainu-logo {
 }
 
 /* Animación imágenes rotando */
-.ingredientsImg {
+/* .ingredientsImg {
     overflow: hidden;
-}
+} */
 
 .rotation-logo {
     display: block;
@@ -332,25 +351,25 @@ img.komainu-logo {
 
 
 /* Footer */
-/* Marquesina */
 footer {
     background-color: black;
-    padding: 1rem 0;
+    padding-top: 1rem;
 }
 
-.marquee {
+/* Marquesina */
+.texto_animado {
     width: 100%;
     overflow: hidden;
     margin-top: 1rem;
 }
 
-.marquee .marquee_content {
+.texto_animado .texto_animado_content {
     display: flex;
     list-style: none;
-    animation: scrolling 15s linear infinite;
+    animation: scrolling 10s linear infinite;
 }
 
-.marquee .marquee_content li {
+.texto_animado .texto_animado_content li {
     font-family: "Rammetto One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -359,15 +378,15 @@ footer {
     text-transform: uppercase;
 }
 
-.marquee .marquee_content li:nth-child(even) {
+.texto_animado .texto_animado_content li:nth-child(even) {
     color: var(--primario);
 }
 
-.marquee .marquee_content li:nth-child(odd) {
+.texto_animado .texto_animado_content li:nth-child(odd) {
     color: var(--secundario);
 }
 
-.marquee .marquee_content ._item {
+.texto_animado .texto_animado_content ._item {
     flex-shrink: 0;
 }
 
@@ -390,14 +409,49 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-size: 1.2em;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .ofertasPromociones2 .row .ofertasPromocionesCont2 p  {
     color: white;
-    margin: 0 2em 2em 2em;
+    margin: 0 2em;
 }
 
+/* Formulario */
+.formulario-footer {
+    padding: 1.8em;
+}
+
+.formulario-footer .form-label {
+    color: white;
+}
+
+.formulario-footer .form-check-label {
+    color: white;
+}
+
+.formulario-footer .form-control {
+    border-radius: 25px;
+    border: var(--primario) solid 2px;
+    background-color: black;
+    color: white;
+}
+
+.formulario-footer .btn-primary {
+    background-color: var(--primario);
+    transition: 0.5s;
+    border-radius: 25px;
+    border: var(--primario) solid 2px;
+    width: 120px;
+}
+
+.formulario-footer .form-control:focus {
+    background-color: var(--secundario) !important;
+    color: black;
+    border-color: var(--primario) !important;
+}
+
+/* Políticas */
 .politicas .row {
     padding: 1rem;
 }
@@ -420,6 +474,7 @@ footer {
     color: var(--primario);
 }
 
+/* Contacto */
 .contacto .row {
     padding: 1rem;
 }
@@ -436,22 +491,17 @@ footer {
     padding: 0;
 }
 
-.copy .row {
-    padding: 1rem;
-}
-
-.copy .row div p {
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-
+/* Menú footer */
 .nav_footer {
     background-image: url('../media/elemento_rojo_footer.png');
-    background-size: contain;
+    background-size: 95%;
     background-repeat: no-repeat;
+    background-position: right center;
     height: 50vh;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-itemFooter a {
@@ -459,4 +509,39 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-size: 1.5em;
+}
+
+/* Final Footer */
+.logoFooter {
+    background-image: url('../media/elemento_amarillo_footer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 30vh;
+    position: relative;
+    z-index: 1;
+
+    margin-top: -180px;
+}
+
+.logoFooter .img {
+    width: 40%; 
+    position: absolute; 
+    bottom: 15px;
+    right: 0px;
+    z-index: 2;
+}
+
+.logoFooter .copy {
+    position: absolute;
+    bottom: 15px;
+    z-index: 3;
+    padding-left: 1.5em;
+}
+
+.logoFooter .copy p {
+    color: var(--primario);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
