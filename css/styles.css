@@ -44,7 +44,8 @@ img {
 }
 
 img.komainu-logo {
-    width:8em;
+    width: 120px;
+    margin-left: 0.3em;
 }
 
 .fa-solid, .fas {
@@ -350,7 +351,7 @@ img.komainu-logo {
 }
 
 
-/* Footer */
+/* FOOTER */
 footer {
     background-color: black;
     padding-top: 1rem;
@@ -494,14 +495,14 @@ footer {
 /* Menú footer */
 .nav_footer {
     background-image: url('../media/elemento_rojo_footer.png');
-    background-size: 95%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;
-    height: 50vh;
+    height: 40vh;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .nav-itemFooter a {
@@ -509,6 +510,7 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-size: 1.5em;
+    padding-right: 3.5em;
 }
 
 /* Final Footer */
@@ -517,15 +519,15 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;
-    height: 30vh;
+    height: 20vh;
     position: relative;
     z-index: 1;
 
-    margin-top: -180px;
+    margin-top: -140px;
 }
 
 .logoFooter .img {
-    width: 40%; 
+    width: 120px; 
     position: absolute; 
     bottom: 15px;
     right: 0px;
@@ -542,6 +544,28 @@ footer {
 .logoFooter .copy p {
     color: var(--primario);
     font-weight: bold;
-    margin: 0;
-    padding: 0;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 960px) {
+
+    /* FOOTER */
+    /* Menú footer */
+    .nav_footer {
+        height: 40vh;
+    }
+
+    .nav-itemFooter a {
+        padding-right: 2em;
+    }
+
+    /* Final Footer */
+    .logoFooter {
+        height: 25vh;
+        margin-top: -100px;
+    }
 }
