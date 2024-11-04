@@ -55,8 +55,8 @@ img.komainu-logo {
 }
 
 .nav-item a {
-    margin-right: 2em;
-    margin-left: 2em;
+    margin: 0 1em;
+    font-size: 1em;
 }
 
 .navbar-toggler {
@@ -248,6 +248,7 @@ img.komainu-logo {
 
 .losKits .row p {
     margin-bottom: 0;
+    font-size: 1em;
 }
 
 .losKits .rpar:hover,
@@ -292,6 +293,10 @@ img.komainu-logo {
     font-size: 2em;
 }
 
+#laUbicacion p {
+    font-size: 1em;
+}
+
 /* CARROUSEL */
 .splide {
     background-color: var(--secundario);
@@ -331,6 +336,7 @@ img.komainu-logo {
     margin: 0.6em;
 }
 
+/* HORARIO */
 .horario {
     background-color: var(--secundario);
 }
@@ -350,6 +356,29 @@ img.komainu-logo {
     color: var(--primario);
 }
 
+.horario .row p {
+    font-size: 1em;
+}
+
+/* SPINNER */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.spinnerBtn {
+    opacity: 1 !important;
+    color: var(--primario) !important;
+}
 
 /* FOOTER */
 footer {
@@ -416,6 +445,7 @@ footer {
 .ofertasPromociones2 .row .ofertasPromocionesCont2 p  {
     color: white;
     margin: 0 2em;
+    font-size: 1em;
 }
 
 /* Formulario */
@@ -425,6 +455,7 @@ footer {
 
 .formulario-footer .form-label {
     color: white;
+    font-size: 1em;
 }
 
 .formulario-footer .form-check-label {
@@ -444,6 +475,7 @@ footer {
     border-radius: 25px;
     border: var(--primario) solid 2px;
     width: 120px;
+    font-size: 1em;
 }
 
 .formulario-footer .form-control:focus {
@@ -467,6 +499,7 @@ footer {
     color: white;
     margin: 0;
     padding: 0;
+    font-size: 1em;
 }
 
 .politicas .row div p:hover {
@@ -477,7 +510,7 @@ footer {
 
 /* Contacto */
 .contacto .row {
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
 }
 
 .contacto .row h3 {
@@ -490,6 +523,7 @@ footer {
     color: white;
     margin: 0;
     padding: 0;
+    font-size: 1em;
 }
 
 /* Menú footer */
@@ -523,7 +557,7 @@ footer {
     position: relative;
     z-index: 1;
 
-    margin-top: -140px;
+    margin-top: -90px;
 }
 
 .logoFooter .img {
@@ -550,22 +584,272 @@ footer {
 
 
 
-/* MEDIA QUERIES */
-@media screen and (min-width: 960px) {
 
-    /* FOOTER */
+
+/* RESERVAR MESA */
+
+.navbarReservasCont {
+    margin: 0.8em;
+}
+
+.navbar-reservar .volver-atras {
+    background-color: var(--primario) !important;
+    border-color: black !important;
+    margin-right: 0.8em;
+    font-size: 1em !important;
+}
+
+.navbar-reservar .volver-atras > a {
+    white-space: nowrap;
+    color: var(--secundario) !important;
+    text-decoration: none;
+}
+
+img.komainu-logo-reservas {
+    width: 120px;
+    margin-left: 0.4rem;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 680px) {
+
+    /* Nav */
+    .nav-item a {
+        margin: 0 2em;
+        font-size: 1.1em;
+    }
+
+    /* Características */
+    .caracteristicas .row {
+        padding: 1.5rem 2rem;
+    }
+
+    /* Kits */
+    .losKits .row {
+        padding: 1.5rem 2rem;
+    }
+
+    /* TEXTO ROJO */
+    .textoRojo .row .textoRojoCont h3 {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    /* HORARIO */
+    .horario .row {
+        padding: 1rem 2rem;
+    }
+
+    /* Footer */
+    /* Formulario */
+    .formulario-footer {
+        padding: 1.8em 2.5em;
+    }
+
+    /* Políticas */
+    .politicas .row {
+        padding: 1rem 2rem;
+    }
+
+    /* Contacto */
+    .contacto .row {
+        padding: 1rem 2rem;
+    }
+
     /* Menú footer */
     .nav_footer {
-        height: 40vh;
+        margin-top: -370px;
     }
 
     .nav-itemFooter a {
-        padding-right: 2em;
+        padding-right: 1.4em;
+    }
+
+    /* Footer final */
+    .logoFooter {
+        height: 22vh;
+        margin-top: -85px;
+    }
+
+    .logoFooter .img {
+        width: 130px; 
+    }
+
+    .logoFooter .copy p {
+        margin-left: 1.4rem;
+    }
+}
+
+
+@media screen and (min-width: 960px) {
+
+    /* IMG logo menú */
+    img.komainu-logo {
+        margin-left: 1em;
+    }
+
+    /* Nav */
+    .nav-item a {
+        justify-content: space-around;
+        margin: 0 1em;
+    }
+
+    .nav-item a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: var(--primario);
+        display: block;
+        transition: 0.2s linear;
+    }
+
+    .nav-item a:hover::after {
+        width: 100%;
+    }
+
+    /* Rest of text */
+    .despcrition-text > p {
+        font-size: 2.8em;
+    }
+
+    /* Características */
+    .caracteristicas .row {
+        padding: 1.5rem 3rem;
+    }
+    
+    
+    .caracteristicas .row .ingredientesTextos h3 {
+        font-size: 1.4em;
+    }
+    
+    .caracteristicas .row .ingredientesTextos p {
+        font-size: 1.1em;
+    }
+    
+    .caracteristicas .row .ingredientesImg img {
+        width: 70px;
+    }
+
+    /* Nuestros kits */
+    #nuestroskits > p {
+        font-size: 2.8em;
+    }
+
+    /* Kits */
+    .losKits .row {
+        padding: 1.5rem 3rem;
+    }
+
+    .losKits .row h3 {
+        font-size: 1.3em;
+    }
+    
+    .losKits .row p {
+        margin-bottom: 0;
+        font-size: 1.1em;
+    }
+
+    /* Ubicación */
+    #laUbicacion {
+        height: 60vh;
+    }
+    
+    #laUbicacion p {
+        font-size: 1.1em;
+    }
+
+    /* TEXTO ROJO */
+    .textoRojo .row .textoRojoCont h3 {
+        font-size: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    /* HORARIO */
+    .horario .row {
+        padding: 1rem 3rem;
+    }
+    
+    .horario .row h3 {
+        font-size: 1.4em;
+    }
+
+    .horario .row p {
+        font-size: 1.1em;
+    }
+
+    /* FOOTER */
+
+    /* Texto ofertas y promociones */
+
+    .ofertasPromociones .row .ofertasPromocionesCont p  {
+        font-size: 1.4em;
+    }
+
+    .ofertasPromociones2 .row .ofertasPromocionesCont2 p  {
+        font-size: 1.1em;
+    }
+
+    /* Formulario */
+    .formulario-footer {
+        width: 100%;
+        /* max-width: 500px; */
+        margin: 0 auto;
+        padding: 1.8em 4em;
+    }
+
+    .formulario-footer .form-label {
+        font-size: 1.1em;
+    }
+
+    .formulario-footer .btn-primary {
+        font-size: 1.1em;
+    }
+
+    /* Políticas */
+    .politicas .row {
+        padding: 1rem 3.2rem;
+    }
+
+    /* Contacto */
+    .contacto .row {
+        padding: 1rem 3.2rem;
+    }
+
+    /* Menú footer */
+    .nav_footer {
+        height: 45vh;
+        margin-top: -350px;
+    }
+
+    .nav-itemFooter a {
+        padding-right: 2.2em;
     }
 
     /* Final Footer */
     .logoFooter {
         height: 25vh;
-        margin-top: -100px;
+        margin-top: -80px;
+    }
+
+    .logoFooter .copy {
+        padding-left: 3.2rem;
+    }
+
+
+    /* RESERVAS MESA */
+
+    .navbar-reservar .volver-atras {
+        margin-right: 1.8em;
+    }
+    
+    img.komainu-logo-reservas {
+        margin-left: 1.2em;
     }
 }
