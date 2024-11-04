@@ -42,7 +42,95 @@
     
     <!-- Body -->
     <main>
-
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" placeholder="Introduce tu nombre" id="nombreInput">
+            </div>
+            <div class="col-md-6">
+              <label for="apellidos" class="form-label">Apellido</label>
+              <input type="text" class="form-control" placeholder="Introduce tu apellido" id="apellidosInput">
+            </div>
+            <div class="col-md-9">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" placeholder="ejemplo@dominio.com" id="emailInput">
+            </div>
+            <div class="col-md-3">
+                <label for="number" class="form-label">Teléfono</label>
+                <input type="number" class="form-control" placeholder="612345678" id="numberInput">
+            </div>
+            <div class="col-md-6">
+                <label for="numero" class="form-label">Nº de personas</label>
+                <select id="numeroInput" class="form-select">
+                  <option selected>1 persona</option>
+                  <option>2 personas</option>
+                  <option>3 personas</option>
+                  <option>4 personas</option>
+                  <option>5 personas</option>
+                  <option>6 personas</option>
+                  <option>7 personas</option>
+                  <option>8 personas</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="comida" class="form-label">Comida</label>
+                <select id="comidaInput" class="form-select">
+                  <option selected>13:30</option>
+                  <option>13:45</option>
+                  <option>14:00</option>
+                  <option>14:15</option>
+                  <option>14:30</option>
+                  <option>14:45</option>
+                  <option>15:00</option>
+                  <option>15:15</option>
+                  <option>15:30</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="cena" class="form-label">Cena</label>
+                <select id="cenaInput" class="form-select">
+                  <option selected>20:30</option>
+                  <option>20:45</option>
+                  <option>21:00</option>
+                  <option>21:15</option>
+                  <option>21:30</option>
+                  <option>21:45</option>
+                  <option>22:00</option>
+                  <option>22:15</option>
+                  <option>22:30</option>
+                </select>
+            </div>
+            <div class="col-md-12">
+                <label for="preferencia" class="form-label">Preferencias</label>
+                <div class="d-flex">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Interior</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Exterior</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                        <label class="form-check-label" for="inlineRadio3">Terraza</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="textArea" class="form-label">Comentarios adicionales</label>
+                <textarea class="form-control" id="textArea" rows="3"></textarea>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Quiero recibir ofertas especiales y noticias de este restaurante
+                </label>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
     </main>
 
     <!-- Footer -->
