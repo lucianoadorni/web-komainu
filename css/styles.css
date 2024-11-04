@@ -51,7 +51,7 @@ img.komainu-logo {
 .fa-solid, .fas {
     font-size: 2em;
     color: var(--primario);
-    margin-right: 0.3em;
+    /* margin-right: 0.3em; */
 }
 
 .nav-item a {
