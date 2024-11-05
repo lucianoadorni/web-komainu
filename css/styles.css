@@ -51,7 +51,6 @@ img.komainu-logo {
 .fa-solid, .fas {
     font-size: 2em;
     color: var(--primario);
-    /* margin-right: 0.3em; */
 }
 
 .nav-item a {
@@ -110,7 +109,6 @@ img.komainu-logo {
     width: 100vw;
     overflow: hidden;
     position: fixed;
-    /* right: 0; */
     bottom: 0;
     z-index: -1;
 }
@@ -152,7 +150,6 @@ img.komainu-logo {
     justify-content: center;
 }
 
-
 .caracteristicas .row .ingredientesTextos h3 {
     font-size: 1.2em;
     margin: 0 0 0.5rem 0;
@@ -168,11 +165,6 @@ img.komainu-logo {
 .caracteristicas .row .ingredientesImg img {
     width: 60px;
 }
-
-/* Animación imágenes rotando */
-/* .ingredientsImg {
-    overflow: hidden;
-} */
 
 .rotation-logo {
     display: block;
@@ -576,7 +568,7 @@ footer {
     font-size: 1em;
 }
 
-/* Menú footer */
+/* Mini-Menú footer */
 .nav_footer {
     background-image: url('../media/elemento_rojo_footer.png');
     background-size: contain;
@@ -597,7 +589,7 @@ footer {
     padding-right: 3.5em;
 }
 
-/* Final Footer */
+/* Final part footer */
 .logoFooter {
     background-image: url('../media/elemento_amarillo_footer.png');
     background-size: contain;
@@ -606,7 +598,6 @@ footer {
     height: 20vh;
     position: relative;
     z-index: 1;
-
     margin-top: -90px;
 }
 
@@ -635,13 +626,8 @@ footer {
 
 
 
-
+/* OTHER PAGE !!!!!!! */
 /* RESERVAR MESA */
-
-.navbarReservasCont {
-    margin: 0.8em;
-}
-
 .navbar-reservar .volver-atras {
     background-color: var(--primario) !important;
     border-color: black !important;
@@ -655,13 +641,8 @@ footer {
     text-decoration: none;
 }
 
-img.komainu-logo-reservas {
-    width: 120px;
-    margin-left: 0.4rem;
-}
-
 .formulario-reservas {
-    padding: 1.6em;
+    margin: 1.6em;
 }
 
 .formulario-reservas .form-label {
@@ -690,11 +671,9 @@ img.komainu-logo-reservas {
     font-size: 1.1em;
     border-color: black !important;
     color: var(--secundario);
-
     font-family: "Rammetto One", sans-serif !important;
     font-weight: 400 !important;
     white-space: nowrap;
-
     filter: drop-shadow(5px 7px 4px #000000bd);
     transition: 0.5s !important;
 }
@@ -711,12 +690,7 @@ img.komainu-logo-reservas {
 }
 
 
-
-
-
-
 /* MEDIA QUERIES */
-
 @media screen and (min-width: 680px) {
 
     /* Nav */
@@ -792,10 +766,6 @@ img.komainu-logo-reservas {
 
 
     /* RESERVAR MESA */
-    .formulario-reservas {
-        padding: 2.5em;
-    }
-
     .formulario-reservas .form-select option {
         font-size: 1em;
     }
@@ -803,11 +773,6 @@ img.komainu-logo-reservas {
 
 
 @media screen and (min-width: 960px) {
-
-    /* IMG logo menú */
-    img.komainu-logo {
-        margin-left: 1em;
-    }
 
     /* Nav */
     .nav-item a {
@@ -916,7 +881,6 @@ img.komainu-logo-reservas {
     /* FOOTER */
 
     /* Texto ofertas y promociones */
-
     .ofertasPromociones .row .ofertasPromocionesCont p  {
         font-size: 1.4em;
     }
@@ -928,7 +892,6 @@ img.komainu-logo-reservas {
     /* Formulario */
     .formulario-footer {
         width: 100%;
-        /* max-width: 500px; */
         margin: 0 auto;
         padding: 1.8em 4em;
     }
@@ -976,14 +939,6 @@ img.komainu-logo-reservas {
 
     .navbar-reservar .volver-atras {
         margin-right: 1.8em;
-    }
-    
-    img.komainu-logo-reservas {
-        margin-left: 1.2em;
-    }
-
-    .formulario-reservas {
-        padding: 3.2em;
     }
 
     .formulario-reservas .form-select option {
