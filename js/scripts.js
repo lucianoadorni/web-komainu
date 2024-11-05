@@ -4,7 +4,11 @@ new Splide( '.splide', {
     perMove: 1,
     focus: "center",
     gap: "1em",
+    drag: "free",
     autoWidth: true,
+    autoScroll: {
+      speed: 1,
+    },
 }).mount();
 
 
@@ -23,8 +27,6 @@ reservarMesaBtn.addEventListener('click', function(event) {
 });
 
 // VENTANA MODAL
-
-
 // LO QUE SALE EN LA GUÍA DE BOOTSTRAP pero hay q modificar ig
 (() => {
     'use strict'

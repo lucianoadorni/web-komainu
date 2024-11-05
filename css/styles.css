@@ -8,6 +8,7 @@
     --secundario: #FAF3CE;
 }
 
+/* General settings. */
 * {
     font-family: "Poppins", system-ui;
     font-weight: 400;
@@ -18,7 +19,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-    background-color: black;
+    background-color: var(--secundario);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -26,7 +27,6 @@ html::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
-/* General settings. */
 body {
     background-color: var(--secundario) !important;
 }
