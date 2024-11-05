@@ -42,95 +42,131 @@
     
     <!-- Body -->
     <main>
-        <form class="row g-3">
+          
+        <!-- MODAL 1 Q DIGA: -->
+        <!-- Solo se admiten reservas para el mismo día -->
+        <!-- Aparece abierta nada más entrar en la segunda pg
+        El botón cierra la MODAL y se ve el formulario
+        Hay un overlay detrás -->
+
+        <!-- FOMULARIO -->
+        <form class="row g-3 needs-validation formulario-reservas" novalidate>
             <div class="col-md-6">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" placeholder="Introduce tu nombre" id="nombreInput">
+                <label for="nombreInput" class="form-label">Nombre</label>
+                <input type="text" class="form-control" placeholder="Introduce tu nombre" id="nombreInput" required>
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">Por favor, introduce tu nombre.</div>
             </div>
             <div class="col-md-6">
-              <label for="apellidos" class="form-label">Apellido</label>
-              <input type="text" class="form-control" placeholder="Introduce tu apellido" id="apellidosInput">
+                <label for="apellidosInput" class="form-label">Apellido</label>
+                <input type="text" class="form-control" placeholder="Introduce tu apellido" id="apellidosInput" required>
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">Por favor, introduce tu apellido.</div>
             </div>
             <div class="col-md-9">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" placeholder="ejemplo@dominio.com" id="emailInput">
+                <label for="emailInput" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" placeholder="ejemplo@dominio.com" id="emailInput" required>
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">Por favor, introduce un correo electrónico válido.</div>
             </div>
             <div class="col-md-3">
-                <label for="number" class="form-label">Teléfono</label>
-                <input type="number" class="form-control" placeholder="612345678" id="numberInput">
+                <label for="numberInput" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" placeholder="612345678" id="numberInput" required>
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">Por favor, introduce un número de teléfono válido.</div>
             </div>
             <div class="col-md-6">
-                <label for="numero" class="form-label">Nº de personas</label>
-                <select id="numeroInput" class="form-select">
-                  <option selected>1 persona</option>
-                  <option>2 personas</option>
-                  <option>3 personas</option>
-                  <option>4 personas</option>
-                  <option>5 personas</option>
-                  <option>6 personas</option>
-                  <option>7 personas</option>
-                  <option>8 personas</option>
+                <label for="numeroInput" class="form-label">Nº de personas</label>
+                <select id="numeroInput" class="form-select" required>
+                    <option selected disabled value="">Selecciona...</option>
+                    <option>1 persona</option>
+                    <option>2 personas</option>
+                    <option>3 personas</option>
+                    <option>4 personas</option>
+                    <option>5 personas</option>
+                    <option>6 personas</option>
+                    <option>7 personas</option>
+                    <option>8 personas</option>
                 </select>
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">Por favor, selecciona el número de personas.</div>
             </div>
             <div class="col-md-3">
-                <label for="comida" class="form-label">Comida</label>
-                <select id="comidaInput" class="form-select">
-                  <option selected>13:30</option>
-                  <option>13:45</option>
-                  <option>14:00</option>
-                  <option>14:15</option>
-                  <option>14:30</option>
-                  <option>14:45</option>
-                  <option>15:00</option>
-                  <option>15:15</option>
-                  <option>15:30</option>
+                <label for="mediodiaInput" class="form-label">Mediodía</label>
+                <select id="mediodiaInput" class="form-select">
+                    <option selected disabled value="">Selecciona horario...</option>
+                    <option>13:30</option>
+                    <option>13:45</option>
+                    <option>14:00</option>
+                    <option>14:15</option>
+                    <option>14:30</option>
+                    <option>14:45</option>
+                    <option>15:00</option>
+                    <option>15:15</option>
+                    <option>15:30</option>
                 </select>
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">Por favor, selecciona un horario para la comida.</div>
             </div>
             <div class="col-md-3">
-                <label for="cena" class="form-label">Cena</label>
-                <select id="cenaInput" class="form-select">
-                  <option selected>20:30</option>
-                  <option>20:45</option>
-                  <option>21:00</option>
-                  <option>21:15</option>
-                  <option>21:30</option>
-                  <option>21:45</option>
-                  <option>22:00</option>
-                  <option>22:15</option>
-                  <option>22:30</option>
+                <label for="nocheInput" class="form-label">Noche</label>
+                <select id="nocheInput" class="form-select">
+                    <option selected disabled value="">Selecciona horario...</option>
+                    <option>20:30</option>
+                    <option>20:45</option>
+                    <option>21:00</option>
+                    <option>21:15</option>
+                    <option>21:30</option>
+                    <option>21:45</option>
+                    <option>22:00</option>
+                    <option>22:15</option>
+                    <option>22:30</option>
                 </select>
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">Por favor, selecciona un horario para la cena.</div>
             </div>
             <div class="col-md-12">
                 <label for="preferencia" class="form-label">Preferencias</label>
                 <div class="d-flex">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
                         <label class="form-check-label" for="inlineRadio1">Interior</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
                         <label class="form-check-label" for="inlineRadio2">Exterior</label>
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-                        <label class="form-check-label" for="inlineRadio3">Terraza</label>
+                        <label class="form-check-label" for="inlineRadio3">Terraza (solo disponible en verano)</label>
                     </div>
                 </div>
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">Por favor, selecciona una preferencia.</div>
             </div>
             <div class="col-md-12">
                 <label for="textArea" class="form-label">Comentarios adicionales</label>
                 <textarea class="form-control" id="textArea" rows="3"></textarea>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
                 <label class="form-check-label" for="flexCheckChecked">
-                    Quiero recibir ofertas especiales y noticias de este restaurante
+                Acepto recibir mensajes por correo electrónico y mensaje de texto
                 </label>
+                <div class="invalid-feedback">Debes aceptar para continuar.</div>
             </div>
+
+            <!-- Este botón tiene que abrir la modal -->
             <div class="col-12 text-center">
-              <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" class="btn btn-primary submit">Finalizar reserva</button>
             </div>
-          </form>
+        </form>
+
+        <!-- MODAL 2 QUE DIGA: -->
+        <!-- Reserva confirmada, muchas gracias -->
+        <!-- Nos vemos pronto, @nombre puesto por el usuario -->
+        <!-- Botón de modal que rediriga a la homepage -->
+
     </main>
 
     <!-- Footer -->
@@ -228,7 +264,7 @@
                 <div class="col-auto">
                     <ul class="navbar-nav mb-0">
                         <li class="nav-itemFooter">
-                            <a class="nav-link active" aria-current="page" href="#caracteristicasG">Filosofía</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Filosofía</a>
                         </li>
                         <li class="nav-itemFooter">
                             <a class="nav-link active" aria-current="page" href="#nuestroskits">Nuestros Kits</a>

@@ -110,14 +110,17 @@ img.komainu-logo {
     width: 100vw;
     overflow: hidden;
     position: fixed;
-    right: 0;
+    /* right: 0; */
     bottom: 0;
     z-index: -1;
 }
 
 #back-video-ramen {
     height: 100vh;
+    width: 100vw;
+    object-fit: cover;
 }
+
 
 /* Rest of text */
 .despcrition-text {
@@ -276,6 +279,53 @@ img.komainu-logo {
     transition: 0.3s;
 }
 
+/* IMÁGENES */
+.imagenes {
+    background-color: var(--secundario);
+    --bs-gutter-y: 0 !important;
+    --bs-gutter-x: 0 !important;
+    padding: 0.7rem !important;
+}
+
+.cardimg {
+    padding: 1rem !important;
+    filter: drop-shadow(5px 7px 4px #00000034);
+    transition: 0.5s !important;
+    
+}
+
+.cardimg:hover {
+    filter: drop-shadow(0px 0px 0px #00000021);
+    transition: 0.5s !important;
+}
+
+.card {
+    background-color: black !important;
+    border: none !important;
+}
+
+.card-body {
+    color: white;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+}
+
+.card-text {
+    font-size: 1em;
+}
+
+.card-footer {
+    border-top: white 1px solid !important;
+}
+
+.estrella {
+    font-size: 1em;
+    color: var(--primario);
+}
 
 /* UBICACION */
 #laUbicacion {
@@ -610,6 +660,56 @@ img.komainu-logo-reservas {
     margin-left: 0.4rem;
 }
 
+.formulario-reservas {
+    padding: 1.6em;
+}
+
+.formulario-reservas .form-label {
+    color: black;
+    font-size: 1.1em;
+}
+
+.formulario-reservas .form-check-label {
+    color: black;
+}
+
+.formulario-reservas .form-control,
+.formulario-reservas .form-select {
+    border-radius: 25px;
+    border: var(--primario) solid 2px;
+    background-color: #fffce8;
+    color: black;
+}
+
+.formulario-reservas .submit {
+    background-color: var(--primario);
+    border-radius: 25px;
+    border: var(--primario) solid 2px;
+    width: 240px;
+    height: 50px;
+    font-size: 1.1em;
+    border-color: black !important;
+    color: var(--secundario);
+
+    font-family: "Rammetto One", sans-serif !important;
+    font-weight: 400 !important;
+    white-space: nowrap;
+
+    filter: drop-shadow(5px 7px 4px #000000bd);
+    transition: 0.5s !important;
+}
+
+.formulario-reservas .submit:hover {
+    filter: drop-shadow(0px 0px 0px #000000bd);
+    transition: 0.5s;
+    background-color: var(--primario) !important;
+    color: var(--secundario) !important;
+}
+
+.formulario-reservas .form-select option {
+    font-size: 0.9em;
+}
+
 
 
 
@@ -633,6 +733,11 @@ img.komainu-logo-reservas {
     /* Kits */
     .losKits .row {
         padding: 1.5rem 2rem;
+    }
+
+    /* Imágenes */
+    .imagenes {
+        padding: 1.5rem 1.5rem !important;
     }
 
     /* TEXTO ROJO */
@@ -683,6 +788,16 @@ img.komainu-logo-reservas {
 
     .logoFooter .copy p {
         margin-left: 0.5rem;
+    }
+
+
+    /* RESERVAR MESA */
+    .formulario-reservas {
+        padding: 2.5em;
+    }
+
+    .formulario-reservas .form-select option {
+        font-size: 1em;
     }
 }
 
@@ -743,7 +858,7 @@ img.komainu-logo-reservas {
 
     /* Kits */
     .losKits .row {
-        padding: 1.5rem 3rem;
+        padding: 2rem 3rem;
     }
 
     .losKits .row h3 {
@@ -754,6 +869,20 @@ img.komainu-logo-reservas {
         margin-bottom: 0;
         font-size: 1.1em;
     }
+
+    /* Imágenes */
+    .imagenes {
+        padding: 1.5rem 2.6rem !important;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+    
+    .card-text {
+        font-size: 1.1em;
+    }
+    
 
     /* Ubicación */
     #laUbicacion {
@@ -851,5 +980,13 @@ img.komainu-logo-reservas {
     
     img.komainu-logo-reservas {
         margin-left: 1.2em;
+    }
+
+    .formulario-reservas {
+        padding: 3.2em;
+    }
+
+    .formulario-reservas .form-select option {
+        font-size: 1em;
     }
 }
