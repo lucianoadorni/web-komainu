@@ -20,11 +20,4 @@ $(document).ready(function(){
           window.location.href = 'reservar.html';
       }, 2000);
   });
-
-  // AFTER SUBMIT DE RESERVA FORM
-  $('.formularioReservas').submit(function(event){
-    event.preventDefault();
-    alert("Submitted");
-    // $(".overlayValidado").css("display", "flex")
-  });
 });
