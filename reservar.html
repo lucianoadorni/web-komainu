@@ -43,7 +43,7 @@
     <!-- Body -->
     <main>
         <!-- FOMULARIO -->
-        <form class="row g-3 needs-validation formulario-reservas" id="reservasValidation">
+        <form class="row g-3 needs-validation formularioReservas" id="reservasValidation" action="">
             <div class="col-md-4">
                 <label for="nombreInput" class="form-label">Nombre</label>
                 <input type="text" class="form-control" placeholder="Introduce tu nombre" id="nombreInput" required>
@@ -114,26 +114,15 @@
                 <div class="invalid-feedback">Debes aceptar para continuar.</div>
             </div>
 
-            <!-- Este botón tiene que abrir la modal -->
             <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary submit">Finalizar reserva</button>
+                <input type="submit" value="Finalizar reserva" class="btn btn-primary formularioValidado submit">
             </div>
         </form>
 
-        <!-- RESERVE BUTTON LOADER -->
-        <div id="overlayLoader" class="overlayLoader">
-            <div class="text-center">
-                <div class="spinner-grow spinnerBtn" style="width: 3rem; height: 3rem;" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
-            </div>
+        <!-- CONFIRMED RESERVADO -->
+        <div id="overlayValidado" class="text-center overlayValidado">
+            <h1>Validado!</h1>
         </div>
-
-        <!-- MODAL 2 QUE DIGA: -->
-        <!-- Reserva confirmada, muchas gracias -->
-        <!-- Nos vemos pronto, @nombre puesto por el usuario -->
-        <!-- Botón de modal que rediriga a la homepage -->
-
     </main>
 
     <!-- Footer -->
@@ -273,6 +262,6 @@
     <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>  
 
     <!-- jscript -->
-    <script src="js/scripts.js"></script>
+    <script src="js/scriptsreservas.js"></script>
 </body>
 </html>

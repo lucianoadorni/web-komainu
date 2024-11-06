@@ -639,28 +639,28 @@ footer {
     text-decoration: none;
 }
 
-.formulario-reservas {
+.formularioReservas {
     margin: 1.6em;
 }
 
-.formulario-reservas .form-label {
+.formularioReservas .form-label {
     color: black;
     font-size: 1.1em;
 }
 
-.formulario-reservas .form-check-label {
+.formularioReservas .form-check-label {
     color: black;
 }
 
-.formulario-reservas .form-control,
-.formulario-reservas .form-select {
+.formularioReservas .form-control,
+.formularioReservas .form-select {
     border-radius: 25px;
     border: var(--primario) solid 2px;
     background-color: #fffce8;
     color: black;
 }
 
-.formulario-reservas .submit {
+.formularioReservas .submit {
     background-color: var(--primario);
     border-radius: 25px;
     border: var(--primario) solid 2px;
@@ -676,15 +676,29 @@ footer {
     transition: 0.5s !important;
 }
 
-.formulario-reservas .submit:hover {
+.formularioReservas .submit:hover {
     filter: drop-shadow(0px 0px 0px #000000bd);
     transition: 0.5s;
     background-color: var(--primario) !important;
     color: var(--secundario) !important;
 }
 
-.formulario-reservas .form-select option {
+.formularioReservas .form-select option {
     font-size: 0.9em;
+}
+
+.overlayValidado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    display: none;
 }
 
 
@@ -765,7 +779,7 @@ footer {
 
 
     /* RESERVAR MESA */
-    .formulario-reservas .form-select option {
+    .formularioReservas .form-select option {
         font-size: 1em;
     }
 }
@@ -939,7 +953,7 @@ footer {
         margin-right: 1.8em;
     }
 
-    .formulario-reservas .form-select option {
+    .formularioReservas .form-select option {
         font-size: 1em;
     }
 }
