@@ -61,7 +61,7 @@
             </div>
             <div class="col-md-4">
                 <label for="numberInput" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" placeholder="612345678" id="numberInput" required>
+                <input type="tel" class="form-control" placeholder="123456789" id="numberInput" required>
                 <div class="invalid-feedback">Por favor, introduce un número de teléfono válido.</div>
             </div>
             <div class="col-md-4">
@@ -85,8 +85,8 @@
                 <div class="invalid-feedback">Por favor, selecciona un horario.</div>
             </div>
             <div class="col-md-6">
-                <label class="form-label">Horario</label>
-                <input id="startDate" class="form-control" type="time" required>
+                <label class="form-label">Horario (13:30-16:15 y 20:30-23:30)</label>
+                <input id="startTime" class="form-control" type="time" min="13:30" max="16:15" step="1800" required>
                 <div class="invalid-feedback">Por favor, selecciona un horario.</div>
             </div>
             <div class="col-md-12">
