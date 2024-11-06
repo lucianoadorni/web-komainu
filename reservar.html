@@ -44,12 +44,12 @@
     <main>
         <!-- FOMULARIO -->
         <form class="row g-3 needs-validation formularioReservas" id="reservasValidation" action="">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <label for="nombreInput" class="form-label">Nombre</label>
                 <input type="text" class="form-control" placeholder="Introduce tu nombre" id="nombreInput" required>
                 <div class="invalid-feedback">Por favor, introduce tu nombre.</div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <label for="apellidosInput" class="form-label">Apellido</label>
                 <input type="text" class="form-control" placeholder="Introduce tu apellido" id="apellidosInput" required>
                 <div class="invalid-feedback">Por favor, introduce tu apellido.</div>
@@ -79,9 +79,14 @@
                 </select>
                 <div class="invalid-feedback">Por favor, selecciona el número de personas.</div>
             </div>
-            <div class="col-md-4">
-                <label for="numeroInput" class="form-label">Fecha</label>
+            <div class="col-md-6">
+                <label class="form-label">Fecha</label>
                 <input id="startDate" class="form-control" type="date" required>
+                <div class="invalid-feedback">Por favor, selecciona un horario.</div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Horario</label>
+                <input id="startDate" class="form-control" type="time" required>
                 <div class="invalid-feedback">Por favor, selecciona un horario.</div>
             </div>
             <div class="col-md-12">
