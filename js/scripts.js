@@ -1,3 +1,4 @@
+// Carrousel
 new Splide( '.splide', {
     type   : 'loop',
     perPage: 3,
@@ -11,30 +12,27 @@ new Splide( '.splide', {
     },
 }).mount();
 
-
 // OVERLAY Y SPINNER
-const reservarMesaBtn = document.querySelector('.reservar-mesa');
-
-reservarMesaBtn.addEventListener('click', function(event) {
-    event.preventDefault();
-
-    const overlay = document.getElementById('overlay');
-    overlay.style.display = 'flex';
-
+$(".reservar-mesa").click(function(){
+    $(".overlayLoader").css("display","flex")
     setTimeout(() => {
         window.location.href = 'reservar.html';
     }, 2000);
 });
 
-// VENTANA MODAL
-// LO QUE SALE EN LA GUÍA DE BOOTSTRAP pero hay q modificar ig
+// Overlay de reservas
+$(".reservar-mesa").click(function(){
+  $(".overlayLoader").css("display","flex")
+  setTimeout(() => {
+      window.location.href = 'reservar.html';
+  }, 2000);
+});
+
+// CHECK DE VALIDAD FORM
 (() => {
     'use strict'
+    const forms = document.querySelectorAll('#reservasValidation')
   
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
     Array.from(forms).forEach(form => {
       form.addEventListener('submit', event => {
         if (!form.checkValidity()) {

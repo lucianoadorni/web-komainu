@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Komainu</title>
-    
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <!-- favicón -->
     <link href="media/FAVICON.png" rel="icon" type="image/png">
 
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
     <!-- splide -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -42,40 +42,29 @@
     
     <!-- Body -->
     <main>
-          
-        <!-- MODAL 1 Q DIGA: -->
-        <!-- Solo se admiten reservas para el mismo día -->
-        <!-- Aparece abierta nada más entrar en la segunda pg
-        El botón cierra la MODAL y se ve el formulario
-        Hay un overlay detrás -->
-
         <!-- FOMULARIO -->
-        <form class="row g-3 needs-validation formulario-reservas" novalidate>
-            <div class="col-md-6">
+        <form class="row g-3 needs-validation formulario-reservas" id="reservasValidation">
+            <div class="col-md-4">
                 <label for="nombreInput" class="form-label">Nombre</label>
                 <input type="text" class="form-control" placeholder="Introduce tu nombre" id="nombreInput" required>
-                <div class="valid-feedback">¡Perfecto!</div>
                 <div class="invalid-feedback">Por favor, introduce tu nombre.</div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <label for="apellidosInput" class="form-label">Apellido</label>
                 <input type="text" class="form-control" placeholder="Introduce tu apellido" id="apellidosInput" required>
-                <div class="valid-feedback">¡Perfecto!</div>
                 <div class="invalid-feedback">Por favor, introduce tu apellido.</div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-4">
                 <label for="emailInput" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control" placeholder="ejemplo@dominio.com" id="emailInput" required>
-                <div class="valid-feedback">¡Perfecto!</div>
                 <div class="invalid-feedback">Por favor, introduce un correo electrónico válido.</div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <label for="numberInput" class="form-label">Teléfono</label>
                 <input type="tel" class="form-control" placeholder="612345678" id="numberInput" required>
-                <div class="valid-feedback">¡Perfecto!</div>
                 <div class="invalid-feedback">Por favor, introduce un número de teléfono válido.</div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <label for="numeroInput" class="form-label">Nº de personas</label>
                 <select id="numeroInput" class="form-select" required>
                     <option selected disabled value="">Selecciona...</option>
@@ -88,33 +77,11 @@
                     <option>7 personas</option>
                     <option>8 personas</option>
                 </select>
-                <div class="valid-feedback">¡Perfecto!</div>
                 <div class="invalid-feedback">Por favor, selecciona el número de personas.</div>
             </div>
-            <div class="col-md-6">
-                <label for="HorarioInput" class="form-label">Hora</label>
-                <select id="HorarioInput" class="form-select">
-                    <option selected disabled value="">Selecciona horario...</option>
-                    <option>13:30</option>
-                    <option>13:45</option>
-                    <option>14:00</option>
-                    <option>14:15</option>
-                    <option>14:30</option>
-                    <option>14:45</option>
-                    <option>15:00</option>
-                    <option>15:15</option>
-                    <option>15:30</option>
-                    <option>20:30</option>
-                    <option>20:45</option>
-                    <option>21:00</option>
-                    <option>21:15</option>
-                    <option>21:30</option>
-                    <option>21:45</option>
-                    <option>22:00</option>
-                    <option>22:15</option>
-                    <option>22:30</option>
-                </select>
-                <div class="valid-feedback">¡Perfecto!</div>
+            <div class="col-md-4">
+                <label for="numeroInput" class="form-label">Fecha</label>
+                <input id="startDate" class="form-control" type="date" required>
                 <div class="invalid-feedback">Por favor, selecciona un horario.</div>
             </div>
             <div class="col-md-12">
@@ -133,7 +100,6 @@
                         <label class="form-check-label" for="inlineRadio3">Terraza (solo disponible en verano)</label>
                     </div>
                 </div>
-                <div class="valid-feedback">¡Perfecto!</div>
                 <div class="invalid-feedback">Por favor, selecciona una preferencia.</div>
             </div>
             <div class="col-md-12">
@@ -141,7 +107,7 @@
                 <textarea class="form-control" id="textArea" rows="3"></textarea>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                 <label class="form-check-label" for="flexCheckChecked">
                 Acepto recibir mensajes por correo electrónico y mensaje de texto
                 </label>
@@ -153,6 +119,15 @@
                 <button type="submit" class="btn btn-primary submit">Finalizar reserva</button>
             </div>
         </form>
+
+        <!-- RESERVE BUTTON LOADER -->
+        <div id="overlayLoader" class="overlayLoader">
+            <div class="text-center">
+                <div class="spinner-grow spinnerBtn" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
 
         <!-- MODAL 2 QUE DIGA: -->
         <!-- Reserva confirmada, muchas gracias -->
@@ -203,7 +178,7 @@
         </div>
 
         <!-- Formulario -->
-        <form class="w-50 m-auto formulario-footer">
+        <form class="m-auto formulario-footer">
             <div class="mb-3 text-center">
               <label for="nombre" class="form-label">Nombre y apellido</label>
               <input type="text" class="form-control" id="inputName">
@@ -256,19 +231,19 @@
                 <div class="col-auto">
                     <ul class="navbar-nav mb-0">
                         <li class="nav-itemFooter">
-                            <a class="nav-link active" aria-current="page" href="index.html">Filosofía</a>
+                            <a class="nav-link active" aria-current="page" href="index.html#caracteristicasG">Filosofía</a>
                         </li>
                         <li class="nav-itemFooter">
-                            <a class="nav-link active" aria-current="page" href="#nuestroskits">Nuestros Kits</a>
+                            <a class="nav-link active" aria-current="page" href="index.html#nuestroskits">Nuestros Kits</a>
                         </li>
                         <li class="nav-itemFooter">
-                            <a class="nav-link active" aria-current="page" href="#laUbicacion">Dirección</a>
+                            <a class="nav-link active" aria-current="page" href="index.html#laUbicacion">Dirección</a>
                         </li>
                         <li class="nav-itemFooter">
-                            <a class="nav-link active" aria-current="page" href="#laGaleria">Galería</a>
+                            <a class="nav-link active" aria-current="page" href="index.html#laGaleria">Galería</a>
                         </li>
                         <li class="nav-itemFooter">
-                            <a class="nav-link active" aria-current="page" href="#horario">Horario</a>
+                            <a class="nav-link active" aria-current="page" href="index.html#horario">Horario</a>
                         </li>
                     </ul>
                 </div>
@@ -289,13 +264,13 @@
     </footer>
 
     <!-- boostrap jscript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script> 
+
     <!-- splide -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>  
 
     <!-- jscript -->
     <script src="js/scripts.js"></script>
