@@ -86,7 +86,7 @@
             </div>
             <div class="col-md-6">
                 <label class="form-label">Horario (13:30-16:15 y 20:30-23:30)</label>
-                <input id="startTime" class="form-control" type="time" min="13:30" max="16:15" step="1800" required>
+                <input id="startTime" class="form-control" type="time" min="13:30" max="23:30" step="1800" required>
                 <div class="invalid-feedback">Por favor, selecciona un horario.</div>
             </div>
             <div class="col-md-12">
@@ -112,7 +112,7 @@
                 <textarea class="form-control" id="textArea" rows="3"></textarea>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
                 <label class="form-check-label" for="flexCheckChecked">
                 Acepto recibir mensajes por correo electrónico y mensaje de texto
                 </label>
@@ -127,9 +127,9 @@
         <!-- CONFIRMED RESERVADO -->
         <div id="overlayValidado" class="text-center overlayValidado">
             <h1>Reservado!</h1>
-            <p class="container-fluid">Te damos hasta 30 minutos de tardanza, para cancelaciones, por favor llamar.</p>
+            <p class="container-fluid">Te ofrecemos un plazo de hasta 30 minutos de tolerancia para retrasos. En caso de necesitar <strong>cancelar tu reserva,</strong> por favor contáctanos lo antes posible.</p>
 
-            <button type="button" class="btn btn-primary rounded-pill btn-lg volverAhomepage"><a href="index.html">Volver a la homepage</a></button>
+            <button type="button" class="btn btn-primary rounded-pill btn-lg volverAhomepage"><a href="index.html">Aceptar</a></button>
         </div>
     </main>
 
