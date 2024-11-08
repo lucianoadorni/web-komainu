@@ -20,4 +20,9 @@ $(document).ready(function(){
           window.location.href = 'reservar.html';
       }, 2000);
   });
+
+  // NAV AUTO CLOSE
+  $(".nav-item").click(function(){
+    $("nav .collapse ").toggleClass("show");
+  })
 });
