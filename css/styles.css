@@ -249,21 +249,21 @@ img.komainu-logo {
     transition: 0.3s;
 }
 
-.losKits .rpar div a i {
+.losKits .rpar div .iconBtn {
     color: var(--secundario);
     font-size: 2em;
 }
 
-.losKits .rpar div a i:hover {
+.losKits .rpar div .iconBtn:hover {
     font-size: 2.5em;
     transition: 0.3s;
 }
 
-.losKits .par div a i {
+.losKits .par div .iconBtn {
     color: black;
 }
 
-.losKits .par div a i:hover {
+.losKits .par div .iconBtn:hover {
     font-size: 2.5em;
     transition: 0.3s;
 }

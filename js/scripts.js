@@ -21,6 +21,13 @@ $(document).ready(function(){
       }, 2000);
   });
 
+  $(".iconBtn").click(function(){
+    $(".overlayLoader").css("display","flex")
+    setTimeout(() => {
+        window.location.href = 'reservar.html';
+    }, 2000);
+});
+
   // NAV AUTO CLOSE
   $(".nav-item").click(function(){
     $("nav .collapse ").toggleClass("show");
