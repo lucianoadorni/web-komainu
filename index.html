@@ -9,7 +9,7 @@
     <link href="media/FAVICON.png" rel="icon" type="image/png">
 
      <!-- fontawesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- splide -->
     <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top box-shadow" style="background-color:#FAF3CE;">
         <!-- Container wrapper -->
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="komainu-logo" src="media/LOGO_KOMAINU_ROJO_2.png" alt="komainu" srcset=""></a>
+            <a class="navbar-brand" href="#"><img class="komainu-logo" src="media/LOGO_KOMAINU_ROJO_2.png" alt="komainu"></a>
         
             <!-- Toggle button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,12 +70,12 @@
         <button type="button" class="btn btn-primary rounded-pill btn-lg reservar-mesa">Reservar mesa</button>
 
         <!-- Rest of text -->
-        <section class="despcrition-text text-center container">
+        <div class="despcrition-text text-center container">
             <p>Descubre el aunténtico umami</p>
-        </section>
-        <section class="despcrition-text text-center container">
+        </div>
+        <div class="despcrition-text text-center container">
             <p>que te transportará a Japón sin necesidad de viajar</p>
-        </section>
+        </div>
 
         <!-- Características de la comida -->
         <section id="caracteristicasG" class="container-fluid caracteristicas">
@@ -121,9 +121,9 @@
         </section>
 
         <!-- NUESTROS KITS -->
-        <section id="nuestroskits">
+        <div id="nuestroskits">
             <p>NUESTROS KITS</p>
-        </section>
+        </div>
         <!-- LOS KITS -->
         <section class="container-fluid losKits">
             <div class="row align-items-center rpar">
@@ -394,22 +394,22 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <div><img src="media\fotos_carrousel\Barra_con_logo.webp" alt=""></div>
+                        <div><img src="media/fotos_carrousel/Barra_con_logo.webp" alt=""></div>
                     </li>
                     <li class="splide__slide">
-                        <div><img src="media\fotos_carrousel\Los_duenos.jpg" alt=""></div>
+                        <div><img src="media/fotos_carrousel/Los_duenos.jpg" alt=""></div>
                     </li>
                     <li class="splide__slide">
-                        <div><img src="media\fotos_carrousel\Mesa_y_Komainu.webp" alt=""></div>
+                        <div><img src="media/fotos_carrousel/Mesa_y_Komainu.webp" alt=""></div>
                     </li>
                     <li class="splide__slide">
-                        <div><img src="media\fotos_carrousel\Ramen_en_bowl.webp" alt=""></div>
+                        <div><img src="media/fotos_carrousel/Ramen_en_bowl.webp" alt=""></div>
                     </li>
                     <li class="splide__slide">
-                        <div><img src="media\fotos_carrousel\Sirviendo_ramen.jpg" alt=""></div>
+                        <div><img src="media/fotos_carrousel/Sirviendo_ramen.jpg" alt=""></div>
                     </li>
                     <li class="splide__slide">
-                        <div><img src="media\fotos_carrousel\Vista_Interior_Ramen_Komainu.webp" alt=""></div>
+                        <div><img src="media/fotos_carrousel/Vista_Interior_Ramen_Komainu.webp" alt=""></div>
                     </li>
                 </ul>
             </div>
@@ -495,11 +495,11 @@
         <!-- Formulario -->
         <form class="m-auto formulario-footer">
             <div class="mb-3 text-center">
-              <label for="nombre" class="form-label">Nombre y apellido</label>
+              <label for="inputName" class="form-label">Nombre y apellido</label>
               <input type="text" class="form-control" id="inputName">
             </div>
             <div class="mb-3 text-center">
-              <label for="correo" class="form-label">Correo electrónico</label>
+              <label for="inputCorreo" class="form-label">Correo electrónico</label>
               <input type="email" class="form-control" id="inputCorreo">
             </div>
             <div class="text-center">
