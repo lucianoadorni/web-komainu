@@ -9,7 +9,7 @@
     <link href="media/FAVICON.png" rel="icon" type="image/png">
 
      <!-- fontawesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- splide -->
     <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
@@ -27,13 +27,11 @@
             <div class="row align-items-center">
                 <div class="col-6">
                     <a class="navbar-brand" href="index.html">
-                        <img class="komainu-logo" src="media/LOGO_KOMAINU_ROJO_2.png" alt="komainu" srcset="">
+                        <img class="komainu-logo" src="media/LOGO_KOMAINU_ROJO_2.png" alt="komainu">
                     </a>
                 </div>
                 <div class="col-6 text-end">
-                    <button type="button" class="btn btn-primary rounded-pill btn-lg volver-atras">
-                        <a href="index.html" class="text-white text-decoration-none texto">Volver atrás</a>
-                    </button>
+                    <a href="index.html" class="btn btn-primary rounded-pill btn-lg volver-atras text-white text-decoration-none texto">Volver atrás</a>
                 </div>
             </div>
         </div>
@@ -41,7 +39,7 @@
     
     <main>
         <!-- FOMULARIO -->
-        <form class="row g-3 needs-validation formularioReservas" id="reservasValidation" action="" novalidate>
+        <form class="row g-3 needs-validation formularioReservas" id="reservasValidation" novalidate>
             <div class="col-md-6">
                 <label for="nombreInput" class="form-label">Nombre</label>
                 <input type="text" class="form-control" placeholder="Introduce tu nombre" id="nombreInput" required>
@@ -88,7 +86,7 @@
                 <div class="invalid-feedback">Por favor, selecciona un horario.</div>
             </div>
             <div class="col-md-12">
-                <label for="preferencia" class="form-label">Preferencias</label>
+                <label class="form-label">Preferencias</label>
                 <div class="d-flex">
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
@@ -126,8 +124,7 @@
         <div id="overlayValidado" class="text-center overlayValidado">
             <h1>Reservado!</h1>
             <p class="container-fluid">Te ofrecemos un plazo de hasta 30 minutos de tolerancia para retrasos. En caso de necesitar <strong>cancelar tu reserva,</strong> por favor contáctanos lo antes posible.</p>
-
-            <button type="button" class="btn btn-primary rounded-pill btn-lg volverAhomepage"><a href="index.html">Aceptar</a></button>
+            <a class="btn btn-primary rounded-pill btn-lg volverAhomepage" href="index.html">Aceptar</a>
         </div>
     </main>
 
@@ -175,11 +172,11 @@
         <!-- Formulario -->
         <form class="m-auto formulario-footer">
             <div class="mb-3 text-center">
-              <label for="nombre" class="form-label">Nombre y apellido</label>
+              <label for="inputName" class="form-label">Nombre y apellido</label>
               <input type="text" class="form-control" id="inputName">
             </div>
             <div class="mb-3 text-center">
-              <label for="correo" class="form-label">Correo electrónico</label>
+              <label for="inputCorreo" class="form-label">Correo electrónico</label>
               <input type="email" class="form-control" id="inputCorreo">
             </div>
             <div class="text-center">

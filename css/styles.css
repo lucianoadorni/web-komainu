@@ -652,7 +652,6 @@ footer {
 .navbar-reservar .volver-atras {
     background-color: var(--primario) !important;
     border-color: black !important;
-    margin-right: 0.8em;
     font-size: 1em !important;
 }
 
@@ -759,6 +758,18 @@ footer {
     text-decoration: none;
 }
 
+.volverAhomepage {
+    font-family: "Rammetto One", sans-serif !important;
+    background-color: var(--primario) !important;
+    color: var(--secundario) !important;
+    border-color: black;
+}
+
+.volverAhomepage:hover {
+    background-color: var(--secundario) !important;
+    color: var(--primario) !important;
+    border-color: black;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 680px) {
@@ -1010,11 +1021,6 @@ footer {
 
 
     /* RESERVAS MESA */
-
-    .navbar-reservar .volver-atras {
-        margin-right: 1.8em;
-    }
-
     .formularioReservas {
         margin: 2em 3em;
     }
